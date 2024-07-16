@@ -50,5 +50,5 @@ To get a local copy up and running follow these simple steps:
 1. The application interacts with a RESTful API to fetch chat data and messages.
 
 2. API endpoints:
-/api/get_all_chats: Retrieves all chats.
-/api/get_chat_messages?chat_id={chat_id}: Retrieves messages for a specific chat.
+- /api/get_all_chats: Retrieves all chats.
+- /api/get_chat_messages?chat_id={chat_id}: Retrieves messages for a specific chat.
