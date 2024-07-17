@@ -5,7 +5,7 @@ import Chat from "./components/Chat";
 import "./App.css";
 
 const App = () => {
-  const [isNavOpen, setIsNavOpen] = useState(window.innerWidth < 412);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [selectedChat, setSelectedChat] = useState(null);
   const [chats, setChats] = useState([]);
   const [messages, setMessages] = useState([]);

@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = ({ isOpen }) => {
   return (
-    <div className={`nav ${isOpen ? "" : "open"}`}>
+    <div className={`nav ${isOpen ? "open" : ""}`}>
       <ul>
         <li>
           <svg
