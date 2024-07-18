@@ -94,7 +94,7 @@ body {
   flex: 1;
 }
 
-@media (min-width: 412px) {
+@media (min-width: 375px) {
   .app-header {
     padding: 10px 0px 20px 0px;
   }
@@ -166,7 +166,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 375px) {
   .chat-list {
     display: flex;
     align-items: center;
@@ -461,7 +461,7 @@ body {
   width: 26px;
 }
 
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 375px) {
   .back-button {
     display: none;
   }
@@ -471,7 +471,7 @@ body {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 375px) {
   html,
   body {
     height: 844px;
@@ -510,7 +510,7 @@ body {
   }
 
   .chat-messages {
-    width: 390px;
+    width: 353px;
     height: 700px;
     padding: 0px;
     top: 80px;
@@ -522,24 +522,34 @@ body {
   }
   .sent {
     padding: 0px 10px;
+    border-radius: 15px 15px 0px 15px;
     height: max-content;
+    max-height: 60px;
     width: max-content;
-    max-width: 351px;
+    max-width: 320px;
   }
+
+  .message-time {
+    margin-top: 8px;
+    margin-bottom: -10px;
+  }
+
   .received {
-    padding: 10px 10px;
+    padding: 0px 10px;
+    border-radius: 15px 15px 15px 0px;
     width: max-content;
-    max-width: 351px;
+    max-width: 320px;
   }
+
   .all-input {
     position: absolute;
     bottom: 5px;
     margin-bottom: 0px;
-    width: 400px;
+    width: 355px;
     padding: 0px;
   }
   .chat-input {
-    width: 340px;
+    width: 290px;
   }
   .mic-input {
     padding: 20px;
@@ -563,7 +573,6 @@ body {
 .nav.open {
   left: 0;
 }
-
 
 .color-nav {
   background: none;
@@ -621,12 +630,12 @@ body {
   color: #ffffff !important;
   margin-bottom: 10px !important;
 }
-.tele-version{
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 13px;
-    background-color: #2c2c2c;
-    color: #aaaaaa;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+.tele-version {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 13px;
+  background-color: #2c2c2c;
+  color: #aaaaaa;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
