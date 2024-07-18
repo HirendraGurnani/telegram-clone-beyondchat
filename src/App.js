@@ -27,7 +27,7 @@ const App = () => {
       .then((data) => setMessages(data.data))
       .catch((error) => console.error("Error fetching chat messages:", error));
 
-    if (window.innerWidth < 375) {
+    if (window.innerWidth >= 320 && window.innerWidth < 480) {
       setIsNavOpen(false);
       setIsHeaderVisible(false); 
       setIsChatListHeadingVisible(false);

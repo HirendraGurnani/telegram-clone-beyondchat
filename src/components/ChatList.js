@@ -3,7 +3,7 @@ import { getProfileIconClass } from "../utils";
 
 const ChatList = ({ chats, openChat, isChatListHeadingVisible }) => {
   const [activeChatId, setActiveChatId] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 375);
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 320 && window.innerWidth < 480);
 
   const handleChatClick = (chat) => {
     setActiveChatId(chat.id);
@@ -13,7 +13,7 @@ const ChatList = ({ chats, openChat, isChatListHeadingVisible }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 375);
+      setIsMobile(window.innerWidth >= 320 && window.innerWidth < 480);
     };
 
     window.addEventListener("resize", handleResize);
