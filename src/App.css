@@ -530,7 +530,7 @@ body {
   }
 
   .chat-messages {
-    width: 353px;
+    width: 95vw;
     height: 77vh;
     padding: 0px;
     top: 73px;
