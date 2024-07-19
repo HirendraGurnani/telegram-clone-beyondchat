@@ -137,7 +137,8 @@ body {
   background-color: #212121;
   height: 90vh;
   z-index: 1;
-  margin-top: 6px;
+  border-right: 1px solid #50505092;
+  margin-top: -26px;
 }
 
 .chat-list-heading {
@@ -147,7 +148,7 @@ body {
   border-right: 1px solid #50505092;
   z-index: 10;
   position: fixed;
-  margin-top: -5px;
+  margin-top: -55px;
   height: 30px;
   width: 25.2%;
 }
