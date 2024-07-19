@@ -95,7 +95,7 @@ body {
   flex: 1;
 }
 
-@media (min-width: 375px) {
+/* @media screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .app-header {
     padding: 10px 0px 20px 0px;
   }
@@ -127,7 +127,7 @@ body {
   .chat-selected .chat {
     display: flex;
   }
-}
+} */
 
 .chat-list {
   flex-direction: column;
@@ -167,7 +167,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .chat-list {
     display: flex;
     align-items: center;
@@ -197,7 +197,7 @@ body {
     width: 100%;
     margin-top: 40px;
   }
-}
+} */
 
 .chat-item {
   display: flex;
@@ -462,7 +462,7 @@ body {
   width: 26px;
 }
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-device-width: 320px) and (max-device-width: 375px){
   .back-button {
     display: none;
   }
@@ -470,9 +470,9 @@ body {
     height: 95vh;
     overflow-x: hidden;
   }
-}
+} */
 
-@media screen and (max-width: 375px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html,
   body {
     height: 844px;
@@ -480,15 +480,34 @@ body {
     padding: 0;
     margin: 0px;
   }
+  .app-header{
+    width: 100vw;
+  }
   .app {
     width: 100%;
     height: 844px;
     overflow-y: hidden;
     padding: 0px;
   }
+  .nav-toggle{
+    /* margin-left: 0px; */
+  }
+  .search-input{
+    /* margin-left: 0px; */
+    width: 290px;
+  }
   .chat-list {
     height: 100vh;
+    width: 100vw;
+    margin-top: 80px;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .chat-list-heading{
+    width: 100vh;
+    margin-top: 50px;
+    margin-left: -3px;
   }
   .chat {
     width: 100%;
@@ -511,10 +530,10 @@ body {
   }
 
   .chat-messages {
-    width: 353px;
-    height: 700px;
+    width: 95vw;
+    height: 77vh;
     padding: 0px;
-    top: 80px;
+    top: 73px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -546,11 +565,11 @@ body {
     position: absolute;
     bottom: 5px;
     margin-bottom: 0px;
-    width: 355px;
+    width: 95vw;
     padding: 0px;
   }
   .chat-input {
-    width: 290px;
+    width: 80vw;
   }
   .mic-input {
     padding: 20px;
